@@ -8,27 +8,30 @@ import NewSkillForm from './New/NewSkillForm'
 
 function App() {
 
-  
-  const form = ['form']
-
   const [skills, setSkills] = useState([
- { name: "HTML", level: 5 },
+    { name: "HTML", level: 5 },
     { name: "CSS", level: 3 },
     { name: "JavaScript", level: 4 },
     { name: "Python", level: 2 },
   ])
-   
-  
+
+
+
+
+  // function to lift from the new form
+  function handleAddNewForm(newForm) {
+    setSkills([newForm, ...skills])
+  }
 
 
   return (
     <div className='App'>
-      <h1>React Dev Skills</h1>
+      <h1 className='teal-text'> React Dev Skills</h1>
       <SkillList skillList={skills} />
       <hr />
-       <NewSkillForm  />
+      <NewSkillForm handleAddNewForm={handleAddNewForm} />
 
-    
+
 
 
     </div>

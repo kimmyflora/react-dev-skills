@@ -6,9 +6,6 @@ import './SkillList.css'
 
 export default function SkillList({skillList}) {
 
-
-
-
     
     const skillLi = skillList.map((item, idx) => {
         return(<SkillListItem key={idx} skill={item} />)
