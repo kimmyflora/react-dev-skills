@@ -2,23 +2,28 @@
 // to be rendered by another component
 
 import SkillListItem from "../SkillListItems/SkillListItems"
+import './SkillList.css'
 
 export default function SkillList({skillList}) {
 
+
+
+
+    
     const skillLi = skillList.map((item, idx) => {
-        return(<SkillListItem key={idx} list={item} />)
+        return(<SkillListItem key={idx} skill={item} />)
 
 
     })
 
+
     return(
-        <ul>
+        <ul className="App"> 
             {skillLi}
-            {skillLi}
-            {skillLi}
+         
         </ul>
     )
-
+z
 
 
 
