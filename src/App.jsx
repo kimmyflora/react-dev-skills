@@ -31,9 +31,6 @@ function App() {
       <hr />
       <NewSkillForm handleAddNewForm={handleAddNewForm} />
 
-
-
-
     </div>
 
 

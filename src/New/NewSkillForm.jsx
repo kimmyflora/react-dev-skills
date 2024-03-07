@@ -11,11 +11,12 @@ export default function NewSkillForm({handleAddNewForm}) {
         level: 3
     })
 
+
+    
     function handleChange(e){
         setNewForm({...newForm, [e.target.name] : e.target.value})
 
     }
-    
 
 
     function handleSubmit(e){
